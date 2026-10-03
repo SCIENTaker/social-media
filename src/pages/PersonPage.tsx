@@ -7,6 +7,7 @@ import type { RelationCategory } from '../lib/types';
 import { formatDate, pairPath } from '../lib/format';
 import { Avatar, CategoryTag, EventRow, PersonBadges } from '../components/common';
 import { GraphLegend } from '../components/GraphLegend';
+import { ErrorBoundary } from '../components/ErrorBoundary';
 
 // 描画ライブラリが大きいため、関係図は必要になってから読み込む
 const RelationGraph = lazy(() => import('../components/RelationGraph'));
@@ -172,9 +173,11 @@ export function PersonPage() {
             </div>
             {shown.length ? (
               <>
-                <Suspense fallback={<div className="graph graph-loading">関係図を読み込み中…</div>}>
-                  <RelationGraph center={person} edges={shown} onSelect={(pid) => pid !== person.id && navigate(`/p/${pid}`)} />
-                </Suspense>
+                <ErrorBoundary compact>
+                  <Suspense fallback={<div className="graph graph-loading">関係図を読み込み中…</div>}>
+                    <RelationGraph center={person} edges={shown} onSelect={(pid) => pid !== person.id && navigate(`/p/${pid}`)} />
+                  </Suspense>
+                </ErrorBoundary>
                 <GraphLegend />
                 <p className="muted small">人物をクリックするとその人を中心に移動します。線にカーソルを合わせる(スマートフォンではタップする)と、根拠の件数と直近の共演日が表示されます。</p>
               </>

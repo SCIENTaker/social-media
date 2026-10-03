@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// base は GitHub Pages 等のサブパス配信に合わせて変更できる(例: BASE_PATH=/social-media/)
+// base を相対パスにして、ドメイン直下でもサブディレクトリ(GitHub Pages 等)でも
+// 設定なしで配信できるようにする(ルーティングはハッシュ方式なのでパスは常に index.html)
 export default defineConfig({
-  base: process.env.BASE_PATH ?? '/',
+  base: './',
   plugins: [react()],
   build: { chunkSizeWarningLimit: 1000 },
 });

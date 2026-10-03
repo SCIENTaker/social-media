@@ -9,7 +9,9 @@
 
 ## 主な画面
 
-| URL | 画面 |
+URL はハッシュ方式(例: `https://example.com/#/p/higuchi-kaede`)です。サーバー側の設定なしで、どの静的ホスティングでもページ遷移・再読み込み・共有URLが動きます。
+
+| URL(`#` 以降) | 画面 |
 | --- | --- |
 | `/` | トップ(検索・最近のコラボ・事務所/イベントへの入口) |
 | `/p/:id` | 人物ページ。本人中心の関係図、期間・関係種別の絞り込み(URLに保存されるので共有可)、共演回数順の一覧 |
@@ -40,8 +42,7 @@ npm run validate   # データの検査(出典の有無・ID参照・禁止ド�
 npm run build      # 検査 → 型チェック → dist/ に出力
 ```
 
-Vercel / Netlify / Cloudflare Pages にそのまま配置できます(SPA 用のリライト設定を同梱)。
-サブパスで配信する場合は `BASE_PATH=/repo-name/ npm run build`。
+`dist/` をそのまま置けば動きます(Vercel / Netlify / Cloudflare Pages / GitHub Pages、サブディレクトリでも可。リライト設定は不要)。
 
 ## データの追加方法
 
