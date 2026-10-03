@@ -1,0 +1,545 @@
+[
+  {
+    "id": "e001",
+    "kind": "collab",
+    "title": "【初コラボ】1期生4人で自己紹介しあう!",
+    "date": "2022-04-10",
+    "host": "stellanote",
+    "participants": [
+      "hoshino-mina",
+      "tsukishiro-rei",
+      "asagiri-kohaku",
+      "yoimiya-ruka"
+    ],
+    "sourceIds": [
+      "src-e001"
+    ]
+  },
+  {
+    "id": "e002",
+    "kind": "collab",
+    "title": "【Among Us】1期生+個人勢で宇宙人狼",
+    "date": "2022-07-22",
+    "host": "tsukishiro-rei",
+    "participants": [
+      "hoshino-mina",
+      "tsukishiro-rei",
+      "yoimiya-ruka",
+      "kitsunebi-akari"
+    ],
+    "sourceIds": [
+      "src-e002"
+    ]
+  },
+  {
+    "id": "e003",
+    "kind": "collab",
+    "title": "【先輩後輩】2期生を迎えて歓迎会",
+    "date": "2023-03-20",
+    "host": "stellanote",
+    "participants": [
+      "hoshino-mina",
+      "asagiri-kohaku",
+      "amane-yuzu",
+      "kuroba-kai",
+      "shirayuki-noa"
+    ],
+    "sourceIds": [
+      "src-e003"
+    ]
+  },
+  {
+    "id": "e004",
+    "kind": "collab",
+    "title": "【ホラー】狐火あかりさんと夜の廃病院",
+    "date": "2023-06-03",
+    "host": "kitsunebi-akari",
+    "participants": [
+      "tsukishiro-rei",
+      "kitsunebi-akari"
+    ],
+    "sourceIds": [
+      "src-e004"
+    ]
+  },
+  {
+    "id": "e005",
+    "kind": "song",
+    "title": "【歌ってみた】星野ミナ×天音ユズ デュエット",
+    "date": "2023-09-09",
+    "host": "amane-yuzu",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu"
+    ],
+    "sourceIds": [
+      "src-e005"
+    ]
+  },
+  {
+    "id": "e006",
+    "kind": "collab",
+    "title": "【APEX】たけのこさんにコーチングしてもらう",
+    "date": "2023-11-02",
+    "host": "tsukishiro-rei",
+    "participants": [
+      "tsukishiro-rei",
+      "takenoko"
+    ],
+    "sourceIds": [
+      "src-e006"
+    ]
+  },
+  {
+    "id": "e007",
+    "kind": "project",
+    "title": "ステラ鯖 マインクラフト 建築祭り",
+    "date": "2024-01-15",
+    "host": "kuroba-kai",
+    "participants": [
+      "kuroba-kai",
+      "asagiri-kohaku",
+      "amane-yuzu",
+      "yoimiya-ruka",
+      "shion",
+      "mecha-bolt"
+    ],
+    "sourceIds": [
+      "src-e007"
+    ]
+  },
+  {
+    "id": "e008",
+    "kind": "collab",
+    "title": "【雑談】ミナとユズのバレンタイン",
+    "date": "2024-02-14",
+    "host": "hoshino-mina",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu"
+    ],
+    "sourceIds": [
+      "src-e008"
+    ]
+  },
+  {
+    "id": "e009",
+    "kind": "collab",
+    "title": "【2周年】1期生大集合",
+    "date": "2024-04-01",
+    "host": "stellanote",
+    "participants": [
+      "hoshino-mina",
+      "tsukishiro-rei",
+      "asagiri-kohaku",
+      "yoimiya-ruka"
+    ],
+    "sourceIds": [
+      "src-e009"
+    ]
+  },
+  {
+    "id": "e010",
+    "kind": "collab",
+    "title": "【3期生歓迎】ようこそステラノートへ!",
+    "date": "2024-06-10",
+    "host": "stellanote",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu",
+      "sakuraba-hina",
+      "raido-jin",
+      "kuroba-kai"
+    ],
+    "sourceIds": [
+      "src-e010"
+    ]
+  },
+  {
+    "id": "e011",
+    "kind": "song",
+    "title": "【Lumière】1stシングル MV公開",
+    "date": "2024-08-01",
+    "host": "lumiere",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu",
+      "sakuraba-hina"
+    ],
+    "sourceIds": [
+      "src-e011"
+    ]
+  },
+  {
+    "id": "e012",
+    "kind": "collab",
+    "title": "【スト6】ゲーマーKさんに格ゲーを教わる",
+    "date": "2024-09-20",
+    "host": "raido-jin",
+    "participants": [
+      "raido-jin",
+      "gamer-k"
+    ],
+    "sourceIds": [
+      "src-e012"
+    ]
+  },
+  {
+    "id": "e013",
+    "kind": "collab",
+    "title": "【ハロウィン】ホラーゲーム3人耐久",
+    "date": "2024-10-31",
+    "host": "asagiri-kohaku",
+    "participants": [
+      "tsukishiro-rei",
+      "kitsunebi-akari",
+      "asagiri-kohaku"
+    ],
+    "sourceIds": [
+      "src-e013"
+    ]
+  },
+  {
+    "id": "e014",
+    "kind": "collab",
+    "title": "【クリスマス】Lumièreで歌枠リレー",
+    "date": "2024-12-24",
+    "host": "lumiere",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu",
+      "sakuraba-hina"
+    ],
+    "sourceIds": [
+      "src-e014"
+    ]
+  },
+  {
+    "id": "e015",
+    "kind": "collab",
+    "title": "【マイクラ】しおんさんとコラボ建築",
+    "date": "2025-01-12",
+    "host": "shion",
+    "participants": [
+      "kuroba-kai",
+      "shion"
+    ],
+    "sourceIds": [
+      "src-e015"
+    ]
+  },
+  {
+    "id": "e016",
+    "kind": "collab",
+    "title": "【技術雑談】メカ丸ボルト×黒羽カイ レトロゲームの仕組み",
+    "date": "2025-03-03",
+    "host": "mecha-bolt",
+    "participants": [
+      "kuroba-kai",
+      "mecha-bolt"
+    ],
+    "sourceIds": [
+      "src-e016"
+    ]
+  },
+  {
+    "id": "e018",
+    "kind": "collab",
+    "title": "【APEX】大会前スクリム NightOwl",
+    "date": "2025-05-10",
+    "host": "takenoko",
+    "participants": [
+      "tsukishiro-rei",
+      "takenoko",
+      "kitsunebi-akari"
+    ],
+    "sourceIds": [
+      "src-e018"
+    ]
+  },
+  {
+    "id": "e019",
+    "kind": "collab",
+    "title": "【APEX】大会前練習 Team Thunder",
+    "date": "2025-05-11",
+    "host": "gamer-k",
+    "participants": [
+      "raido-jin",
+      "gamer-k",
+      "sakuraba-hina"
+    ],
+    "sourceIds": [
+      "src-e019"
+    ]
+  },
+  {
+    "id": "e017",
+    "kind": "tournament",
+    "title": "たけのこ杯 APEX LEGENDS 招待制カスタム",
+    "date": "2025-05-18",
+    "host": "takenoko",
+    "participants": [
+      "tsukishiro-rei",
+      "takenoko",
+      "kitsunebi-akari",
+      "raido-jin",
+      "gamer-k",
+      "sakuraba-hina",
+      "kuroba-kai",
+      "shion",
+      "mecha-bolt"
+    ],
+    "teams": [
+      {
+        "name": "Team NightOwl",
+        "members": [
+          "tsukishiro-rei",
+          "takenoko",
+          "kitsunebi-akari"
+        ]
+      },
+      {
+        "name": "Team Thunder",
+        "members": [
+          "raido-jin",
+          "gamer-k",
+          "sakuraba-hina"
+        ]
+      },
+      {
+        "name": "Team Craft",
+        "members": [
+          "kuroba-kai",
+          "shion",
+          "mecha-bolt"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "src-e017"
+    ]
+  },
+  {
+    "id": "e020",
+    "kind": "collab",
+    "title": "【七夕】ミナとユズの歌枠",
+    "date": "2025-07-07",
+    "host": "hoshino-mina",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu"
+    ],
+    "sourceIds": [
+      "src-e020"
+    ]
+  },
+  {
+    "id": "e021",
+    "kind": "collab",
+    "title": "【料理】コハクとヒナのお料理配信",
+    "date": "2025-08-15",
+    "host": "asagiri-kohaku",
+    "participants": [
+      "asagiri-kohaku",
+      "sakuraba-hina"
+    ],
+    "sourceIds": [
+      "src-e021"
+    ]
+  },
+  {
+    "id": "e022",
+    "kind": "collab",
+    "title": "【ホラー】あかり&レイ 毎年恒例ハロウィン",
+    "date": "2025-10-30",
+    "host": "kitsunebi-akari",
+    "participants": [
+      "tsukishiro-rei",
+      "kitsunebi-akari"
+    ],
+    "sourceIds": [
+      "src-e022"
+    ]
+  },
+  {
+    "id": "e023",
+    "kind": "collab",
+    "title": "【卒業前】1期生4人最後の集合",
+    "date": "2025-12-20",
+    "host": "stellanote",
+    "participants": [
+      "hoshino-mina",
+      "tsukishiro-rei",
+      "asagiri-kohaku",
+      "yoimiya-ruka"
+    ],
+    "sourceIds": [
+      "src-e023"
+    ]
+  },
+  {
+    "id": "e024",
+    "kind": "project",
+    "title": "ステラ鯖 マインクラフト 新春建築祭り2026",
+    "date": "2026-01-20",
+    "host": "kuroba-kai",
+    "participants": [
+      "kuroba-kai",
+      "asagiri-kohaku",
+      "amane-yuzu",
+      "raido-jin",
+      "shion",
+      "mecha-bolt"
+    ],
+    "sourceIds": [
+      "src-e024"
+    ]
+  },
+  {
+    "id": "e025",
+    "kind": "collab",
+    "title": "【バレンタイン】Lumière 3人雑談",
+    "date": "2026-02-14",
+    "host": "lumiere",
+    "participants": [
+      "hoshino-mina",
+      "amane-yuzu",
+      "sakuraba-hina"
+    ],
+    "sourceIds": [
+      "src-e025"
+    ]
+  },
+  {
+    "id": "e026",
+    "kind": "collab",
+    "title": "【スト6】ゲーマーK×雷堂ジン 師弟対決",
+    "date": "2026-03-28",
+    "host": "gamer-k",
+    "participants": [
+      "raido-jin",
+      "gamer-k"
+    ],
+    "sourceIds": [
+      "src-e026"
+    ]
+  },
+  {
+    "id": "e027",
+    "kind": "collab",
+    "title": "【4周年】ステラノート全員集合",
+    "date": "2026-04-01",
+    "host": "stellanote",
+    "participants": [
+      "hoshino-mina",
+      "tsukishiro-rei",
+      "asagiri-kohaku",
+      "amane-yuzu",
+      "kuroba-kai",
+      "sakuraba-hina",
+      "raido-jin"
+    ],
+    "sourceIds": [
+      "src-e027"
+    ]
+  },
+  {
+    "id": "e028",
+    "kind": "collab",
+    "title": "【APEX】たけのこ×月城レイ ランクマ",
+    "date": "2026-05-05",
+    "host": "takenoko",
+    "participants": [
+      "tsukishiro-rei",
+      "takenoko"
+    ],
+    "sourceIds": [
+      "src-e028"
+    ]
+  },
+  {
+    "id": "e029",
+    "kind": "song",
+    "title": "【オリジナル曲】天音ユズ×星野ミナ「(サンプル曲)」",
+    "date": "2026-06-21",
+    "host": "amane-yuzu",
+    "participants": [
+      "amane-yuzu",
+      "hoshino-mina"
+    ],
+    "sourceIds": [
+      "src-e029"
+    ]
+  },
+  {
+    "id": "e030",
+    "kind": "collab",
+    "title": "【マイクラ】しおん・黒羽カイ・メカ丸ボルト 夏休み建築",
+    "date": "2026-07-19",
+    "host": "shion",
+    "participants": [
+      "shion",
+      "kuroba-kai",
+      "mecha-bolt"
+    ],
+    "sourceIds": [
+      "src-e030"
+    ]
+  },
+  {
+    "id": "e031",
+    "kind": "collab",
+    "title": "【夏祭り】ヒナとユズの3D配信",
+    "date": "2026-08-10",
+    "host": "sakuraba-hina",
+    "participants": [
+      "sakuraba-hina",
+      "amane-yuzu"
+    ],
+    "sourceIds": [
+      "src-e031"
+    ]
+  },
+  {
+    "id": "e032",
+    "kind": "collab",
+    "title": "【雑談】たけのこ×狐火あかり ホラー談義",
+    "date": "2026-08-30",
+    "host": "kitsunebi-akari",
+    "participants": [
+      "takenoko",
+      "kitsunebi-akari"
+    ],
+    "sourceIds": [
+      "src-e032"
+    ]
+  },
+  {
+    "id": "e033",
+    "kind": "collab",
+    "title": "【ホラー】月城レイ×狐火あかり 秋の廃校",
+    "date": "2026-09-12",
+    "host": "tsukishiro-rei",
+    "participants": [
+      "tsukishiro-rei",
+      "kitsunebi-akari"
+    ],
+    "sourceIds": [
+      "src-e033"
+    ]
+  },
+  {
+    "id": "e034",
+    "kind": "collab",
+    "title": "【格ゲー】雷堂ジン×桜庭ヒナ 初心者講座",
+    "date": "2026-09-25",
+    "host": "raido-jin",
+    "participants": [
+      "raido-jin",
+      "sakuraba-hina"
+    ],
+    "sourceIds": [
+      "src-e034"
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "stellanote",
+    "name": "ステラノート",
+    "kind": "agency",
+    "company": "株式会社サンプル",
+    "start": "2022-04-01",
+    "url": "https://example.com/stellanote"
+  },
+  {
+    "id": "lumiere",
+    "name": "Lumière",
+    "kind": "unit",
+    "parent": "stellanote",
+    "start": "2024-08-01",
+    "url": "https://example.com/stellanote/lumiere"
+  },
+  {
+    "id": "team-nightowl",
+    "name": "Team NightOwl",
+    "kind": "team",
+    "start": "2025-05-01"
+  }
+]

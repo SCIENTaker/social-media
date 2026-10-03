@@ -1,0 +1,328 @@
+[
+  {
+    "id": "hoshino-mina",
+    "name": "星野ミナ",
+    "kana": "ほしのみな",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2022-04-01",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-hoshino-mina"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_hoshino_mina"
+      }
+    ],
+    "bio": "ステラノート1期生。歌枠と雑談が中心。ユニット「Lumière」のリーダー。"
+  },
+  {
+    "id": "tsukishiro-rei",
+    "name": "月城レイ",
+    "kana": "つきしろれい",
+    "aliases": [
+      "月白レイ"
+    ],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2022-04-01",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-tsukishiro-rei"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_tsukishiro_rei"
+      }
+    ],
+    "bio": "ステラノート1期生。FPSとホラーゲーム実況が得意。"
+  },
+  {
+    "id": "asagiri-kohaku",
+    "name": "朝霧コハク",
+    "kana": "あさぎりこはく",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2022-04-02",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-asagiri-kohaku"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_asagiri_kohaku"
+      }
+    ],
+    "bio": "ステラノート1期生。料理配信と長時間耐久配信で知られる。"
+  },
+  {
+    "id": "yoimiya-ruka",
+    "name": "宵宮ルカ",
+    "kana": "よいみやるか",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "retired",
+    "debut": "2022-04-02",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-yoimiya-ruka"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_yoimiya_ruka"
+      }
+    ],
+    "bio": "ステラノート1期生。2025年12月に卒業。"
+  },
+  {
+    "id": "amane-yuzu",
+    "name": "天音ユズ",
+    "kana": "あまねゆず",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2023-03-15",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-amane-yuzu"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_amane_yuzu"
+      }
+    ],
+    "bio": "ステラノート2期生。オリジナル曲を多数発表している歌い手系VTuber。"
+  },
+  {
+    "id": "kuroba-kai",
+    "name": "黒羽カイ",
+    "kana": "くろばかい",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2023-03-15",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-kuroba-kai"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_kuroba_kai"
+      }
+    ],
+    "bio": "ステラノート2期生。マインクラフト建築とレトロゲーム。"
+  },
+  {
+    "id": "shirayuki-noa",
+    "name": "白雪ノア",
+    "kana": "しらゆきのあ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "hiatus",
+    "debut": "2023-03-16",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-shirayuki-noa"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_shirayuki_noa"
+      }
+    ],
+    "bio": "ステラノート2期生。現在は活動休止中(公式発表あり)。"
+  },
+  {
+    "id": "sakuraba-hina",
+    "name": "桜庭ヒナ",
+    "kana": "さくらばひな",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2024-06-01",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-sakuraba-hina"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_sakuraba_hina"
+      }
+    ],
+    "bio": "ステラノート3期生。ダンスと3D配信が得意。"
+  },
+  {
+    "id": "raido-jin",
+    "name": "雷堂ジン",
+    "kana": "らいどうじん",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2024-06-01",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-raido-jin"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_raido_jin"
+      }
+    ],
+    "bio": "ステラノート3期生。格闘ゲームの大会常連。"
+  },
+  {
+    "id": "kitsunebi-akari",
+    "name": "狐火あかり",
+    "kana": "きつねびあかり",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2021-08-10",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-kitsunebi-akari"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_kitsunebi_akari"
+      }
+    ],
+    "bio": "個人勢VTuber。ホラーゲームと朗読。"
+  },
+  {
+    "id": "mecha-bolt",
+    "name": "メカ丸ボルト",
+    "kana": "めかまるぼると",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2023-01-20",
+    "links": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@sample-mecha-bolt"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_mecha_bolt"
+      }
+    ],
+    "bio": "個人勢のロボット系VTuber。技術解説と自作ゲーム。"
+  },
+  {
+    "id": "takenoko",
+    "name": "たけのこ",
+    "kana": "たけのこ",
+    "aliases": [
+      "takenoko_tv"
+    ],
+    "kind": "streamer",
+    "status": "active",
+    "links": [
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/sample_takenoko"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_takenoko"
+      }
+    ],
+    "bio": "FPSを中心に活動するストリーマー。大会主催も行う。"
+  },
+  {
+    "id": "gamer-k",
+    "name": "ゲーマーK",
+    "kana": "げーまーけー",
+    "aliases": [],
+    "kind": "streamer",
+    "status": "active",
+    "links": [
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/sample_gamer_k"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_gamer_k"
+      }
+    ],
+    "bio": "格闘ゲーム・レトロゲームのストリーマー。"
+  },
+  {
+    "id": "shion",
+    "name": "しおん",
+    "kana": "しおん",
+    "aliases": [],
+    "kind": "streamer",
+    "status": "active",
+    "links": [
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/sample_shion"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/sample_shion"
+      }
+    ],
+    "bio": "雑談とマインクラフトのストリーマー。"
+  },
+  {
+    "id": "palette",
+    "name": "ぱれっと",
+    "kana": "ぱれっと",
+    "aliases": [],
+    "kind": "creator",
+    "status": "active",
+    "links": [
+      {
+        "label": "X",
+        "url": "https://x.com/sample_palette"
+      }
+    ],
+    "bio": "イラストレーター。複数のVTuberのキャラクターデザインを担当。"
+  },
+  {
+    "id": "mochiko",
+    "name": "もちこ",
+    "kana": "もちこ",
+    "aliases": [],
+    "kind": "creator",
+    "status": "active",
+    "links": [
+      {
+        "label": "X",
+        "url": "https://x.com/sample_mochiko"
+      }
+    ],
+    "bio": "イラストレーター・Live2Dモデラー。"
+  },
+  {
+    "id": "tone-p",
+    "name": "Tone",
+    "kana": "とーん",
+    "aliases": [],
+    "kind": "creator",
+    "status": "active",
+    "links": [
+      {
+        "label": "X",
+        "url": "https://x.com/sample_tone_p"
+      }
+    ],
+    "bio": "作曲家。VTuberへの楽曲提供を行う。"
+  }
+]

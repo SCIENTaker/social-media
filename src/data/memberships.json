@@ -1,0 +1,138 @@
+[
+  {
+    "personId": "hoshino-mina",
+    "orgId": "stellanote",
+    "role": "1期生",
+    "start": "2022-04-01",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "tsukishiro-rei",
+    "orgId": "stellanote",
+    "role": "1期生",
+    "start": "2022-04-01",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "asagiri-kohaku",
+    "orgId": "stellanote",
+    "role": "1期生",
+    "start": "2022-04-01",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "yoimiya-ruka",
+    "orgId": "stellanote",
+    "role": "1期生",
+    "start": "2022-04-01",
+    "end": "2025-12-31",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "amane-yuzu",
+    "orgId": "stellanote",
+    "role": "2期生",
+    "start": "2023-03-15",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "kuroba-kai",
+    "orgId": "stellanote",
+    "role": "2期生",
+    "start": "2023-03-15",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "shirayuki-noa",
+    "orgId": "stellanote",
+    "role": "2期生",
+    "start": "2023-03-15",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "sakuraba-hina",
+    "orgId": "stellanote",
+    "role": "3期生",
+    "start": "2024-06-01",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "raido-jin",
+    "orgId": "stellanote",
+    "role": "3期生",
+    "start": "2024-06-01",
+    "sourceIds": [
+      "src-official-roster"
+    ]
+  },
+  {
+    "personId": "hoshino-mina",
+    "orgId": "lumiere",
+    "role": "メンバー",
+    "start": "2024-08-01",
+    "sourceIds": [
+      "src-official-lumiere"
+    ]
+  },
+  {
+    "personId": "amane-yuzu",
+    "orgId": "lumiere",
+    "role": "メンバー",
+    "start": "2024-08-01",
+    "sourceIds": [
+      "src-official-lumiere"
+    ]
+  },
+  {
+    "personId": "sakuraba-hina",
+    "orgId": "lumiere",
+    "role": "メンバー",
+    "start": "2024-08-01",
+    "sourceIds": [
+      "src-official-lumiere"
+    ]
+  },
+  {
+    "personId": "tsukishiro-rei",
+    "orgId": "team-nightowl",
+    "role": "メンバー",
+    "start": "2025-05-01",
+    "sourceIds": [
+      "src-post-nightowl"
+    ]
+  },
+  {
+    "personId": "takenoko",
+    "orgId": "team-nightowl",
+    "role": "メンバー",
+    "start": "2025-05-01",
+    "sourceIds": [
+      "src-post-nightowl"
+    ]
+  },
+  {
+    "personId": "kitsunebi-akari",
+    "orgId": "team-nightowl",
+    "role": "メンバー",
+    "start": "2025-05-01",
+    "sourceIds": [
+      "src-post-nightowl"
+    ]
+  }
+]

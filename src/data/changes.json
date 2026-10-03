@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2026-09-15",
+    "target": "イベント",
+    "summary": "サンプルデータを一括登録",
+    "editor": "admin",
+    "approver": "admin"
+  },
+  {
+    "date": "2026-09-20",
+    "target": "人物: 月城レイ",
+    "summary": "別名に旧表記「月白レイ」を追加",
+    "editor": "contributor-1",
+    "approver": "admin"
+  },
+  {
+    "date": "2026-09-28",
+    "target": "関係: r010",
+    "summary": "出典URLを本人配信のアーカイブに差し替え",
+    "editor": "contributor-2",
+    "approver": "admin"
+  }
+]
