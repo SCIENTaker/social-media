@@ -40,7 +40,29 @@ describe('Db.neighbors', () => {
     expect(b.count).toBe(2);
     expect(b.first).toBe('2024-01-01');
     expect(b.last).toBe('2026-09-01');
-    expect([...b.categories].sort()).toEqual(['affiliation', 'collab']);
+    // 同じ事務所というだけでは「公式所属」の線にしない(所属組織は添える)
+    expect([...b.categories]).toEqual(['collab']);
+    expect(b.sharedOrgs.map((o) => o.id)).toEqual(['o']);
+  });
+
+  it('事務所が同じだけで他に関係のない相手は出さないが、同期・ユニットは出す', () => {
+    const d = fixture();
+    d.persons.push(person('e'), person('f'), person('g'));
+    d.orgs.push({ id: 'u', name: 'U', kind: 'unit', parent: 'o' });
+    d.memberships.push(
+      { personId: 'e', orgId: 'o', start: '2021-01-01', sourceIds: ['s1'] },
+      { personId: 'f', orgId: 'o', role: '1期生', sourceIds: ['s1'] },
+      { personId: 'g', orgId: 'o', role: '1期生', sourceIds: ['s1'] },
+      { personId: 'e', orgId: 'u', sourceIds: ['s1'] },
+      { personId: 'g', orgId: 'u', sourceIds: ['s1'] },
+    );
+    const db2 = new Db(d);
+    const ids = (id: string) => db2.neighbors(id, 'all', today).map((e) => e.other.id).sort();
+    expect(ids('e')).toEqual(['g']); // ユニット
+    expect(ids('f')).toEqual(['g']); // 同期
+    // 2人の関係ビューでは同じ事務所も根拠として出す
+    expect(db2.pair('e', 'f')?.categories.has('affiliation')).toBe(true);
+    expect(db2.agencyMates('e', today)[0].count).toBe(4); // a, b, f, g(d は卒業済み)
   });
 
   it('期間で絞り込める', () => {
@@ -107,4 +129,15 @@ describe('validateDataset', () => {
 
 it('normalize はカタカナをひらがなにする', () => {
   expect(normalize('ホシノ ミナ')).toBe('ほしのみな');
+});
+
+it('チーム分けのある大会では同じチームだけを共演とみなす', () => {
+  const d = fixture();
+  d.events.push({
+    id: 'e4', kind: 'tournament', title: '4', date: '2026-07-01', participants: ['a', 'c', 'd'],
+    teams: [{ name: 'T1', members: ['a', 'c'] }, { name: 'T2', members: ['d'] }], sourceIds: ['s3'],
+  });
+  const db = new Db(d);
+  const ids = db.neighbors('a', 'all', today).filter((e) => e.projectEvents.length).map((e) => e.other.id);
+  expect(ids).toEqual(['c']);
 });

@@ -70,7 +70,7 @@ export interface Relation {
   sourceIds: string[];
 }
 
-export type EventKind = 'collab' | 'song' | 'project' | 'tournament';
+export type EventKind = 'collab' | 'song' | 'project' | 'tournament' | 'live';
 
 export interface EventTeam {
   name: string;
@@ -84,12 +84,15 @@ export interface StreamEvent {
   date: string;
   /** 主催(人物IDまたは組織ID) */
   host?: string;
+  /** 主催が未掲載の人物・団体の場合の表示名 */
+  hostName?: string;
   participants: string[];
   teams?: EventTeam[];
   sourceIds: string[];
 }
 
-export type SourceKind = 'archive' | 'official' | 'post';
+/** news は公式発表を報じた報道記事(一次出典に差し替えるまでの暫定) */
+export type SourceKind = 'archive' | 'official' | 'post' | 'news';
 
 export interface Source {
   id: string;
@@ -98,6 +101,8 @@ export interface Source {
   /** 取得日 */
   retrieved: string;
   archiveUrl?: string;
+  /** 出典の見出し・補足 */
+  title?: string;
 }
 
 export interface ChangeLogEntry {

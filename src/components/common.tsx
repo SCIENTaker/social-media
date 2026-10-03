@@ -48,7 +48,12 @@ export function SourceLinks({ ids }: { ids: string[] }) {
         if (!s) return null;
         return (
           <span key={id}>
-            <a href={s.url} target="_blank" rel="noopener noreferrer" title={`取得日 ${formatDate(s.retrieved)}`}>
+            <a
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`${s.title ? s.title + ' ・ ' : ''}取得日 ${formatDate(s.retrieved)}`}
+            >
               出典{ids.length > 1 ? i + 1 : ''}({SOURCE_KIND_LABELS[s.kind]})
             </a>
             {s.archiveUrl && (
@@ -66,7 +71,15 @@ export function SourceLinks({ ids }: { ids: string[] }) {
   );
 }
 
-export function EventRow({ event, showParticipants = true }: { event: StreamEvent; showParticipants?: boolean }) {
+export function EventRow({
+  event,
+  showParticipants = true,
+  note,
+}: {
+  event: StreamEvent;
+  showParticipants?: boolean;
+  note?: string;
+}) {
   const { visible, hiddenCount } = db.visibleParticipants(event);
   return (
     <li className="event-row">
@@ -78,6 +91,7 @@ export function EventRow({ event, showParticipants = true }: { event: StreamEven
         <Link to={`/event/${event.id}`} className="event-title">
           {event.title}
         </Link>
+        {note && <div className="event-note">{note}</div>}
         {showParticipants && (
           <div className="event-people">
             {visible.map((p) => p.name).join('、')}

@@ -43,10 +43,12 @@ export const EVENT_KIND_LABELS: Record<EventKind, string> = {
   song: '歌・動画',
   project: '企画',
   tournament: '大会',
+  live: 'ライブ・イベント',
 };
 
 export const SOURCE_KIND_LABELS: Record<SourceKind, string> = {
   archive: '配信アーカイブ',
   official: '公式発表',
   post: '本人投稿',
+  news: '報道記事',
 };

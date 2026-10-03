@@ -17,6 +17,7 @@ export function EventPage() {
   const { visible, hiddenCount } = db.visibleParticipants(event);
   const host = event.host ? (db.person(event.host) ?? db.org(event.host)) : undefined;
   const hostLink = event.host && db.org(event.host) ? `/org/${event.host}` : `/p/${event.host}`;
+  const hostLabel = host ? <Link to={hostLink}>{host.name}</Link> : event.hostName;
   const inTeam = new Set(event.teams?.flatMap((t) => t.members));
   const others = visible.filter((p) => !inTeam.has(p.id));
 
@@ -28,12 +29,10 @@ export function EventPage() {
         <dl className="facts">
           <dt>日時</dt>
           <dd>{formatDate(event.date)}</dd>
-          {host && (
+          {hostLabel && (
             <>
               <dt>主催</dt>
-              <dd>
-                <Link to={hostLink}>{host.name}</Link>
-              </dd>
+              <dd>{hostLabel}</dd>
             </>
           )}
           <dt>出典</dt>
@@ -45,6 +44,9 @@ export function EventPage() {
 
       <section className="card">
         <h2>参加者({event.participants.length}人)</h2>
+        {event.teams && (
+          <p className="muted small">チーム分けのある大会では、同じチームのメンバー同士を「企画・大会」の関係として数えています。</p>
+        )}
         {event.teams?.map((t, i) => (
           <div key={t.name} className="team" style={{ borderColor: TEAM_COLORS[i % TEAM_COLORS.length] }}>
             <h3 style={{ color: TEAM_COLORS[i % TEAM_COLORS.length] }}>{t.name}</h3>
@@ -64,6 +66,7 @@ export function EventPage() {
             ))}
           </div>
         )}
+        <p className="muted small">このサイトに掲載している人物のみ表示しています。</p>
         {hiddenCount > 0 && <p className="muted small">ほか、本人の希望により非公開の参加者が{hiddenCount}名います。</p>}
       </section>
     </div>

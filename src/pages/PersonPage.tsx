@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { lazy, Suspense, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { db } from '../lib/store';
 import { PERIOD_LABELS, type NeighborEdge, type Period } from '../lib/db';
@@ -6,7 +6,10 @@ import { CATEGORY_LABELS, CATEGORY_ORDER, ORG_KIND_LABELS } from '../lib/labels'
 import type { RelationCategory } from '../lib/types';
 import { formatDate, pairPath } from '../lib/format';
 import { Avatar, CategoryTag, EventRow, PersonBadges } from '../components/common';
-import { GraphLegend, RelationGraph } from '../components/RelationGraph';
+import { GraphLegend } from '../components/GraphLegend';
+
+// 描画ライブラリが大きいため、関係図は必要になってから読み込む
+const RelationGraph = lazy(() => import('../components/RelationGraph'));
 import { useTitle } from '../components/Layout';
 import { NotFoundPage } from './NotFoundPage';
 import { GRAPH_MAX_NODES } from '../config';
@@ -76,6 +79,7 @@ export function PersonPage() {
   };
 
   const memberships = db.membershipsOf(person.id);
+  const agencyMates = db.agencyMates(person.id);
   const relationPublic = db.isRelationPublic(person.id);
   const events = [...db.eventsOf(person.id)].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 10);
 
@@ -168,13 +172,23 @@ export function PersonPage() {
             </div>
             {shown.length ? (
               <>
-                <RelationGraph center={person} edges={shown} onSelect={(pid) => pid !== person.id && navigate(`/p/${pid}`)} />
+                <Suspense fallback={<div className="graph graph-loading">関係図を読み込み中…</div>}>
+                  <RelationGraph center={person} edges={shown} onSelect={(pid) => pid !== person.id && navigate(`/p/${pid}`)} />
+                </Suspense>
                 <GraphLegend />
-                <p className="muted small">人物をクリックするとその人を中心に移動します。線にカーソルを合わせると根拠の件数と直近の共演日が表示されます。</p>
+                <p className="muted small">人物をクリックするとその人を中心に移動します。線にカーソルを合わせる(スマートフォンではタップする)と、根拠の件数と直近の共演日が表示されます。</p>
               </>
             ) : (
-              <p className="muted">この条件に当てはまる関係はありません。</p>
+              <p className="muted">この条件に当てはまる関係は、まだ登録されていません。</p>
             )}
+            {agencyMates.map(({ org, count }) => (
+              <p key={org.id} className="muted small agency-mates">
+                同じ事務所の所属者は図に含めていません(ユニット・同期・共演のある相手のみ表示)。
+                <Link to={`/org/${org.id}`}>
+                  {org.name}の所属者 {count}人を見る →
+                </Link>
+              </p>
+            ))}
           </section>
 
           <section className="card">
@@ -211,7 +225,7 @@ export function PersonPage() {
                       <span className="muted small">共演なし</span>
                     )}
                   </span>
-                  <Link to={pairPath(person.id, e.other.id)} className="small">
+                  <Link to={pairPath(person.id, e.other.id)} className="small rel-link">
                     根拠を見る →
                   </Link>
                 </li>

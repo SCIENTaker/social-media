@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
-import { SAMPLE_DATA, SITE_NAME } from '../config';
+import { DATA_NOTICE, SITE_NAME } from '../config';
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -21,11 +21,7 @@ export function Layout() {
           </nav>
         </div>
       </header>
-      {SAMPLE_DATA && (
-        <div className="sample-banner">
-          現在表示しているのは動作確認用の<strong>架空のサンプルデータ</strong>です。実在の人物・団体とは関係ありません。
-        </div>
-      )}
+      {DATA_NOTICE && <div className="sample-banner">{DATA_NOTICE}</div>}
       <main className="container main">
         <Outlet />
       </main>

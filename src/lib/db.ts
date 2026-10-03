@@ -43,7 +43,7 @@ export interface PathStep {
 }
 
 const COLLAB_KINDS = new Set(['collab', 'song']);
-const PROJECT_KINDS = new Set(['project', 'tournament']);
+const PROJECT_KINDS = new Set(['project', 'tournament', 'live']);
 
 export function periodStart(period: Period, today: Date): string | undefined {
   if (period === 'all') return undefined;
@@ -157,7 +157,12 @@ export class Db {
    * 中心人物の1ホップ先の関係をすべて集計する。
    * 共演回数はイベントから毎回集計するため、数値と出典が常に一致する。
    */
-  neighbors(centerId: string, period: Period = 'all', today: Date = new Date()): NeighborEdge[] {
+  neighbors(
+    centerId: string,
+    period: Period = 'all',
+    today: Date = new Date(),
+    includeAgencyMates = false,
+  ): NeighborEdge[] {
     if (!this.isRelationPublic(centerId)) return [];
     const since = periodStart(period, today);
     const edges = new Map<string, NeighborEdge>();
@@ -182,7 +187,7 @@ export class Db {
     for (const ev of this.eventsOf(centerId)) {
       if (since && ev.date < since) continue;
       const isCollab = COLLAB_KINDS.has(ev.kind);
-      for (const pid of ev.participants) {
+      for (const pid of coParticipants(ev, centerId)) {
         const e = edgeFor(pid);
         if (!e) continue;
         if (isCollab) {
@@ -205,14 +210,19 @@ export class Db {
       e.categories.add(r.type);
     }
 
+    // 所属: ユニット・チーム・グループの共有と、事務所の同期(同じ期生)を「公式所属」の関係とみなす。
+    // 大きな事務所では全員が同僚になり図が埋まってしまうため、事務所が同じだけの相手は
+    // includeAgencyMates のときか、他の関係がある場合にだけ所属組織を添える。
     for (const m of this.membershipsOf(centerId)) {
+      const org = this.orgMap.get(m.orgId)!;
       for (const other of this.membersOf(m.orgId)) {
-        if (!overlaps(m, other)) continue;
+        if (other.personId === centerId || !overlaps(m, other)) continue;
+        const strong = org.kind !== 'agency' || (!!m.role && m.role === other.role);
+        if (!strong && !includeAgencyMates && !edges.has(other.personId)) continue;
         const e = edgeFor(other.personId);
         if (!e) continue;
-        const org = this.orgMap.get(m.orgId)!;
         if (!e.sharedOrgs.includes(org)) e.sharedOrgs.push(org);
-        e.categories.add('affiliation');
+        if (strong || includeAgencyMates) e.categories.add('affiliation');
       }
     }
 
@@ -226,7 +236,7 @@ export class Db {
 
   /** 2人の関係(全期間) */
   pair(aId: string, bId: string): NeighborEdge | undefined {
-    return this.neighbors(aId, 'all').find((e) => e.other.id === bId);
+    return this.neighbors(aId, 'all', new Date(), true).find((e) => e.other.id === bId);
   }
 
   /** 2人の両方と共演・企画で一緒になったことのある人物 */
@@ -260,7 +270,7 @@ export class Db {
       // 新しい共演を優先して経路に使う
       const evs = [...this.eventsOf(cur)].sort((a, b) => b.date.localeCompare(a.date));
       for (const ev of evs) {
-        for (const pid of ev.participants) {
+        for (const pid of coParticipants(ev, cur)) {
           if (visited.has(pid) || !this.isRelationPublic(pid)) continue;
           visited.add(pid);
           prev.set(pid, { id: cur, event: ev });
@@ -281,6 +291,19 @@ export class Db {
     return undefined;
   }
 
+  /** 同じ事務所に同時期に所属する(している)人数。関係図には出さず件数だけ示す */
+  agencyMates(personId: string, today: Date = new Date()): { org: Org; count: number }[] {
+    const t = today.toISOString().slice(0, 10);
+    return this.membershipsOf(personId)
+      .filter((m) => this.orgMap.get(m.orgId)?.kind === 'agency' && (!m.end || m.end >= t))
+      .map((m) => ({
+        org: this.orgMap.get(m.orgId)!,
+        count: this.membersOf(m.orgId).filter(
+          (o) => o.personId !== personId && (!o.end || o.end >= t) && this.isRelationPublic(o.personId),
+        ).length,
+      }));
+  }
+
   /** 現在の主な所属事務所(関係図の枠に使う) */
   primaryAgency(personId: string, today: Date = new Date()): Org | undefined {
     const t = today.toISOString().slice(0, 10);
@@ -293,6 +316,20 @@ export class Db {
   recentEvents(limit = 6): StreamEvent[] {
     return [...this.data.events].sort((a, b) => b.date.localeCompare(a.date)).slice(0, limit);
   }
+}
+
+/**
+ * イベントで「一緒に出た」とみなす相手。
+ * チーム分けのある大会では、同じ大会に出ただけでは共演とせず、同じチームのメンバーだけを数える。
+ */
+export function coParticipants(ev: StreamEvent, personId: string): string[] {
+  const team = ev.teams?.find((t) => t.members.includes(personId));
+  return team ? team.members : ev.participants;
+}
+
+/** 2人が同じチームだったときのチーム名 */
+export function sharedTeam(ev: StreamEvent, a: string, b: string): string | undefined {
+  return ev.teams?.find((t) => t.members.includes(a) && t.members.includes(b))?.name;
 }
 
 function push<K, V>(map: Map<K, V[]>, key: K, value: V) {

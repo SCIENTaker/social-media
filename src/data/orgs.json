@@ -1,24 +1,57 @@
 [
   {
-    "id": "stellanote",
-    "name": "ステラノート",
+    "id": "nijisanji",
+    "name": "にじさんじ",
     "kind": "agency",
-    "company": "株式会社サンプル",
-    "start": "2022-04-01",
-    "url": "https://example.com/stellanote"
+    "company": "ANYCOLOR株式会社",
+    "start": "2018-02-08",
+    "url": "https://www.nijisanji.jp/"
   },
   {
-    "id": "lumiere",
-    "name": "Lumière",
+    "id": "vspo",
+    "name": "ぶいすぽっ!",
+    "kind": "agency",
+    "company": "株式会社Brave group",
+    "url": "https://vspo.jp/"
+  },
+  {
+    "id": "jk-gumi",
+    "name": "JK組",
     "kind": "unit",
-    "parent": "stellanote",
-    "start": "2024-08-01",
-    "url": "https://example.com/stellanote/lumiere"
+    "parent": "nijisanji",
+    "start": "2018-02-14"
   },
   {
-    "id": "team-nightowl",
-    "name": "Team NightOwl",
-    "kind": "team",
-    "start": "2025-05-01"
+    "id": "otoko-gumi",
+    "name": "にじさんじ漢組",
+    "kind": "unit",
+    "parent": "nijisanji",
+    "start": "2018-02-18"
+  },
+  {
+    "id": "rof-mao",
+    "name": "ROF-MAO",
+    "kind": "unit",
+    "parent": "nijisanji",
+    "start": "2021-10-21"
+  },
+  {
+    "id": "voltaction",
+    "name": "VOLTACTION",
+    "kind": "unit",
+    "parent": "nijisanji",
+    "start": "2022-07-13"
+  },
+  {
+    "id": "sanbaka",
+    "name": "さんばか",
+    "kind": "group",
+    "parent": "nijisanji"
+  },
+  {
+    "id": "lvg",
+    "name": "Lupinus Virtual Games",
+    "kind": "unit",
+    "parent": "vspo"
   }
 ]

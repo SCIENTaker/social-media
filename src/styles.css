@@ -163,7 +163,6 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: 16px;
-  margin-bottom: 16px;
 }
 @media (max-width: 760px) {
   .grid-2 {
@@ -636,14 +635,27 @@ textarea:focus {
 }
 @media (max-width: 680px) {
   .rel-list li {
-    grid-template-columns: 24px 1fr auto;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    grid-template-areas:
+      'rank name count'
+      '. tags tags'
+      '. link link';
     row-gap: 4px;
   }
-  .rel-tags {
-    grid-column: 2 / -1;
+  .rank {
+    grid-area: rank;
   }
-  .rel-list li > a.small {
-    grid-column: 2 / -1;
+  .rel-name {
+    grid-area: name;
+  }
+  .rel-count {
+    grid-area: count;
+  }
+  .rel-tags {
+    grid-area: tags;
+  }
+  .rel-link {
+    grid-area: link;
   }
 }
 
@@ -837,4 +849,29 @@ textarea:focus {
 }
 .prose li {
   margin: 4px 0;
+}
+
+.org-item {
+  flex-direction: column;
+  gap: 2px !important;
+}
+.org-children {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+.agency-mates {
+  margin-top: 12px;
+}
+.graph-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.event-note {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #c0661a;
 }

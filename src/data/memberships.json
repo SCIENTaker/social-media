@@ -1,138 +1,557 @@
 [
   {
-    "personId": "hoshino-mina",
-    "orgId": "stellanote",
+    "personId": "tsukino-mito",
+    "orgId": "nijisanji",
     "role": "1期生",
-    "start": "2022-04-01",
+    "start": "2018-02-08",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "tsukishiro-rei",
-    "orgId": "stellanote",
+    "personId": "higuchi-kaede",
+    "orgId": "nijisanji",
     "role": "1期生",
-    "start": "2022-04-01",
+    "start": "2018-02-08",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "asagiri-kohaku",
-    "orgId": "stellanote",
+    "personId": "shizuka-rin",
+    "orgId": "nijisanji",
     "role": "1期生",
-    "start": "2022-04-01",
+    "start": "2018-02-08",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "yoimiya-ruka",
-    "orgId": "stellanote",
+    "personId": "yuuki-chihiro",
+    "orgId": "nijisanji",
     "role": "1期生",
-    "start": "2022-04-01",
-    "end": "2025-12-31",
+    "start": "2018-02-08",
+    "end": "2024-01-31",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st",
+      "s-niji-grad"
     ]
   },
   {
-    "personId": "amane-yuzu",
-    "orgId": "stellanote",
-    "role": "2期生",
-    "start": "2023-03-15",
+    "personId": "suzuya-aki",
+    "orgId": "nijisanji",
+    "role": "1期生",
+    "start": "2018-02-08",
+    "end": "2024-08-31",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st",
+      "s-niji-grad"
     ]
   },
   {
-    "personId": "kuroba-kai",
-    "orgId": "stellanote",
-    "role": "2期生",
-    "start": "2023-03-15",
+    "personId": "moira",
+    "orgId": "nijisanji",
+    "role": "1期生",
+    "start": "2018-02-08",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "shirayuki-noa",
-    "orgId": "stellanote",
-    "role": "2期生",
-    "start": "2023-03-15",
+    "personId": "eru",
+    "orgId": "nijisanji",
+    "role": "1期生",
+    "start": "2018-02-08",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "sakuraba-hina",
-    "orgId": "stellanote",
-    "role": "3期生",
-    "start": "2024-06-01",
+    "personId": "shibuya-hajime",
+    "orgId": "nijisanji",
+    "role": "1期生",
+    "start": "2018-02-08",
     "sourceIds": [
-      "src-official-roster"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "raido-jin",
-    "orgId": "stellanote",
-    "role": "3期生",
-    "start": "2024-06-01",
+    "personId": "kenmochi-toya",
+    "orgId": "nijisanji",
     "sourceIds": [
-      "src-official-roster"
+      "s-rofmao"
     ]
   },
   {
-    "personId": "hoshino-mina",
-    "orgId": "lumiere",
+    "personId": "fuwa-minato",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-rofmao"
+    ]
+  },
+  {
+    "personId": "kagami-hayato",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-rofmao"
+    ]
+  },
+  {
+    "personId": "kaida-haru",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-rofmao"
+    ]
+  },
+  {
+    "personId": "fura-kanato",
+    "orgId": "nijisanji",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "watarai-hibari",
+    "orgId": "nijisanji",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "shikinagi-akira",
+    "orgId": "nijisanji",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "seraph-dazzlegarden",
+    "orgId": "nijisanji",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "ange-katrina",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-sanbaka"
+    ]
+  },
+  {
+    "personId": "lize-helesta",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-sanbaka"
+    ]
+  },
+  {
+    "personId": "inui-toko",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-sanbaka"
+    ]
+  },
+  {
+    "personId": "kanae",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-vsaikyo5-teams"
+    ]
+  },
+  {
+    "personId": "lauren-iroas",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-vsaikyo5-teams"
+    ]
+  },
+  {
+    "personId": "yuhi-riri",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-vsaikyo5-teams"
+    ]
+  },
+  {
+    "personId": "uzuki-kou",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-vsaikyo5-teams"
+    ]
+  },
+  {
+    "personId": "makaino-ririmu",
+    "orgId": "nijisanji",
+    "sourceIds": [
+      "s-vsaikyo5-teams"
+    ]
+  },
+  {
+    "personId": "kaga-sumire",
+    "orgId": "vspo",
+    "start": "2018-10-20",
+    "sourceIds": [
+      "s-vspo-roster",
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "kaga-nazuna",
+    "orgId": "vspo",
+    "start": "2018-10-20",
+    "sourceIds": [
+      "s-vspo-roster",
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "kosuzume-toto",
+    "orgId": "vspo",
+    "start": "2018-10-19",
+    "sourceIds": [
+      "s-vspo-roster",
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "ichinose-uruha",
+    "orgId": "vspo",
+    "start": "2019-04-19",
+    "sourceIds": [
+      "s-vspo-roster",
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "kurumi-noa",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "tosaki-mimi",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "asumi-sena",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "tachibana-hinano",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "hanabusa-lisa",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "kisaragi-ren",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "kaminari-qpi",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "yakumo-beni",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "aizawa-ema",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "shinomiya-runa",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "nekota-tsuna",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "shiranami-ramune",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "komori-met",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "yumeno-akari",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "yano-kuromu",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "tsumugi-kokage",
+    "orgId": "vspo",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "sendo-yuuhi",
+    "orgId": "vspo",
+    "start": "2024-04-30",
+    "sourceIds": [
+      "s-vspo-roster",
+      "s-vspo-sendo"
+    ]
+  },
+  {
+    "personId": "choya-hanabi",
+    "orgId": "vspo",
+    "start": "2024-10-31",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "amayui-moka",
+    "orgId": "vspo",
+    "start": "2024-10-31",
+    "sourceIds": [
+      "s-vspo-roster"
+    ]
+  },
+  {
+    "personId": "ginjo-saine",
+    "orgId": "vspo",
+    "start": "2026-01-11",
+    "sourceIds": [
+      "s-vspo-2026"
+    ]
+  },
+  {
+    "personId": "tatsumaki-chise",
+    "orgId": "vspo",
+    "start": "2026-01-11",
+    "sourceIds": [
+      "s-vspo-2026"
+    ]
+  },
+  {
+    "personId": "tsukino-mito",
+    "orgId": "jk-gumi",
     "role": "メンバー",
-    "start": "2024-08-01",
+    "start": "2018-02-14",
     "sourceIds": [
-      "src-official-lumiere"
+      "s-jk"
     ]
   },
   {
-    "personId": "amane-yuzu",
-    "orgId": "lumiere",
+    "personId": "higuchi-kaede",
+    "orgId": "jk-gumi",
     "role": "メンバー",
-    "start": "2024-08-01",
+    "start": "2018-02-14",
     "sourceIds": [
-      "src-official-lumiere"
+      "s-jk"
     ]
   },
   {
-    "personId": "sakuraba-hina",
-    "orgId": "lumiere",
+    "personId": "shizuka-rin",
+    "orgId": "jk-gumi",
     "role": "メンバー",
-    "start": "2024-08-01",
+    "start": "2018-02-14",
     "sourceIds": [
-      "src-official-lumiere"
+      "s-jk"
     ]
   },
   {
-    "personId": "tsukishiro-rei",
-    "orgId": "team-nightowl",
+    "personId": "shibuya-hajime",
+    "orgId": "otoko-gumi",
     "role": "メンバー",
-    "start": "2025-05-01",
+    "start": "2018-02-18",
     "sourceIds": [
-      "src-post-nightowl"
+      "s-niji-1st"
     ]
   },
   {
-    "personId": "takenoko",
-    "orgId": "team-nightowl",
+    "personId": "suzuya-aki",
+    "orgId": "otoko-gumi",
     "role": "メンバー",
-    "start": "2025-05-01",
+    "start": "2018-02-18",
     "sourceIds": [
-      "src-post-nightowl"
+      "s-niji-1st"
+    ],
+    "end": "2024-08-31"
+  },
+  {
+    "personId": "kenmochi-toya",
+    "orgId": "rof-mao",
+    "role": "メンバー",
+    "start": "2021-10-21",
+    "sourceIds": [
+      "s-rofmao"
     ]
   },
   {
-    "personId": "kitsunebi-akari",
-    "orgId": "team-nightowl",
+    "personId": "fuwa-minato",
+    "orgId": "rof-mao",
     "role": "メンバー",
-    "start": "2025-05-01",
+    "start": "2021-10-21",
     "sourceIds": [
-      "src-post-nightowl"
+      "s-rofmao"
+    ]
+  },
+  {
+    "personId": "kagami-hayato",
+    "orgId": "rof-mao",
+    "role": "メンバー",
+    "start": "2021-10-21",
+    "sourceIds": [
+      "s-rofmao"
+    ]
+  },
+  {
+    "personId": "kaida-haru",
+    "orgId": "rof-mao",
+    "role": "メンバー",
+    "start": "2021-10-21",
+    "sourceIds": [
+      "s-rofmao"
+    ]
+  },
+  {
+    "personId": "fura-kanato",
+    "orgId": "voltaction",
+    "role": "メンバー",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "watarai-hibari",
+    "orgId": "voltaction",
+    "role": "メンバー",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "shikinagi-akira",
+    "orgId": "voltaction",
+    "role": "メンバー",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "seraph-dazzlegarden",
+    "orgId": "voltaction",
+    "role": "メンバー",
+    "start": "2022-07-13",
+    "sourceIds": [
+      "s-voltaction"
+    ]
+  },
+  {
+    "personId": "ange-katrina",
+    "orgId": "sanbaka",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-sanbaka"
+    ]
+  },
+  {
+    "personId": "lize-helesta",
+    "orgId": "sanbaka",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-sanbaka"
+    ]
+  },
+  {
+    "personId": "inui-toko",
+    "orgId": "sanbaka",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-sanbaka"
+    ]
+  },
+  {
+    "personId": "kaga-sumire",
+    "orgId": "lvg",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "kaga-nazuna",
+    "orgId": "lvg",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "kosuzume-toto",
+    "orgId": "lvg",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-lvg"
+    ]
+  },
+  {
+    "personId": "ichinose-uruha",
+    "orgId": "lvg",
+    "role": "メンバー",
+    "sourceIds": [
+      "s-lvg"
     ]
   }
 ]

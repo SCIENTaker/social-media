@@ -1,298 +1,114 @@
 [
   {
-    "id": "src-official-roster",
-    "url": "https://example.com/stellanote/talents",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-vspo-roster",
+    "url": "https://dengekionline.com/article/202411/22907",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "電撃オンライン: 蝶屋はなび・甘結もか新加入(日本部門23名の記載)"
   },
   {
-    "id": "src-official-lumiere",
-    "url": "https://example.com/stellanote/news/lumiere",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-vspo-2026",
+    "url": "https://dengekionline.com/article/202601/62953",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "電撃オンライン: 銀城サイネ・龍巻ちせ新加入"
   },
   {
-    "id": "src-post-nightowl",
-    "url": "https://x.com/sample_takenoko/status/1",
-    "kind": "post",
-    "retrieved": "2026-09-01"
+    "id": "s-vspo-sendo",
+    "url": "https://dengekionline.com/article/202404/4025",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "電撃オンライン: 千燈ゆうひ新加入"
   },
   {
-    "id": "src-rel-1",
-    "url": "https://example.com/stellanote/talents/hoshino-mina",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-lvg",
+    "url": "https://realsound.jp/tech/2024/05/post-1658138.html",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "Real Sound: 一ノ瀬うるは&小森めと(Lupinus Virtual Games に言及)"
   },
   {
-    "id": "src-rel-2",
-    "url": "https://example.com/stellanote/talents/amane-yuzu",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-vspo-brave",
+    "url": "https://www.inside-games.jp/article/2025/05/20/167460.html",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "インサイド: ぶいすぽっ!(Brave group)"
   },
   {
-    "id": "src-rel-3",
-    "url": "https://x.com/sample_kitsunebi_akari/status/10",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-niji-1st",
+    "url": "https://www.inside-games.jp/article/2021/11/05/135106.html",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "インサイド: 一期生ライブ「initial step in NIJISANJI」"
   },
   {
-    "id": "src-rel-4",
-    "url": "https://example.com/stellanote/talents/tsukishiro-rei",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-niji-grad",
+    "url": "https://kai-you.net/article/90118",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "KAI-YOU: にじさんじ1期生の卒業について"
   },
   {
-    "id": "src-rel-5",
-    "url": "https://example.com/stellanote/talents/kuroba-kai",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-jk",
+    "url": "https://www.moguravr.com/?p=93130",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "MoguLive: JK組"
   },
   {
-    "id": "src-rel-6",
-    "url": "https://x.com/sample_mecha_bolt/status/3",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-rofmao",
+    "url": "https://kai-you.net/article/84113",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "KAI-YOU: ROF-MAO"
   },
   {
-    "id": "src-rel-7",
-    "url": "https://www.youtube.com/watch?v=sample-tone-yuzu",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-rofmao-live",
+    "url": "https://natalie.mu/eiga/news/592213",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "ナタリー: ROF-MAO 1st LIVE シネマ版"
   },
   {
-    "id": "src-rel-8",
-    "url": "https://www.youtube.com/watch?v=sample-tone-mina",
-    "kind": "official",
-    "retrieved": "2026-09-01"
+    "id": "s-voltaction",
+    "url": "https://realsound.jp/tech/2022/07/post-1077189.html",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "Real Sound: VOLTACTION デビュー"
   },
   {
-    "id": "src-rel-9",
-    "url": "https://www.youtube.com/watch?v=sample-aikata",
-    "kind": "archive",
-    "retrieved": "2026-09-01"
+    "id": "s-sanbaka",
+    "url": "https://www.animatetimes.com/webcast/?p=23",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "アニメイトタイムズ: さんばか"
   },
   {
-    "id": "src-rel-10",
-    "url": "https://www.youtube.com/watch?v=sample-shisho",
-    "kind": "archive",
-    "retrieved": "2026-09-01"
+    "id": "s-vsaikyo5-teams",
+    "url": "https://www.famitsu.com/news/202303/13295878.html",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "ファミ通: V最協S5 出場チームまとめ"
   },
   {
-    "id": "src-rel-11",
-    "url": "https://www.youtube.com/watch?v=sample-kakuge-shisho",
-    "kind": "archive",
-    "retrieved": "2026-09-01"
+    "id": "s-vsaikyo5-result",
+    "url": "https://www.inside-games.jp/article/2023/04/17/145400.html",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "インサイド: V最協S5 結果"
   },
   {
-    "id": "src-e001",
-    "url": "https://www.youtube.com/watch?v=sample-e001",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
+    "id": "s-showdown",
+    "url": "https://www.moguravr.com/?p=264162",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "MoguLive: VSPO! SHOWDOWN powered by RAGE"
   },
   {
-    "id": "src-e002",
-    "url": "https://www.youtube.com/watch?v=sample-e002",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e003",
-    "url": "https://www.youtube.com/watch?v=sample-e003",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e004",
-    "url": "https://www.youtube.com/watch?v=sample-e004",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e004"
-  },
-  {
-    "id": "src-e005",
-    "url": "https://www.youtube.com/watch?v=sample-e005",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e006",
-    "url": "https://www.youtube.com/watch?v=sample-e006",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e007",
-    "url": "https://x.com/sample_kuroba_kai/status/700",
-    "kind": "official",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e008",
-    "url": "https://www.youtube.com/watch?v=sample-e008",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e008"
-  },
-  {
-    "id": "src-e009",
-    "url": "https://www.youtube.com/watch?v=sample-e009",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e010",
-    "url": "https://www.youtube.com/watch?v=sample-e010",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e011",
-    "url": "https://www.youtube.com/watch?v=sample-e011",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e012",
-    "url": "https://www.youtube.com/watch?v=sample-e012",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e012"
-  },
-  {
-    "id": "src-e013",
-    "url": "https://www.youtube.com/watch?v=sample-e013",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e014",
-    "url": "https://www.youtube.com/watch?v=sample-e014",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e015",
-    "url": "https://www.youtube.com/watch?v=sample-e015",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e016",
-    "url": "https://www.youtube.com/watch?v=sample-e016",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e016"
-  },
-  {
-    "id": "src-e017",
-    "url": "https://x.com/sample_takenoko/status/1700",
-    "kind": "official",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e018",
-    "url": "https://www.youtube.com/watch?v=sample-e018",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e019",
-    "url": "https://www.youtube.com/watch?v=sample-e019",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e020",
-    "url": "https://www.youtube.com/watch?v=sample-e020",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e020"
-  },
-  {
-    "id": "src-e021",
-    "url": "https://www.youtube.com/watch?v=sample-e021",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e022",
-    "url": "https://www.youtube.com/watch?v=sample-e022",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e023",
-    "url": "https://www.youtube.com/watch?v=sample-e023",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e024",
-    "url": "https://x.com/sample_kuroba_kai/status/2400",
-    "kind": "official",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e024"
-  },
-  {
-    "id": "src-e025",
-    "url": "https://www.youtube.com/watch?v=sample-e025",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e026",
-    "url": "https://www.youtube.com/watch?v=sample-e026",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e027",
-    "url": "https://www.youtube.com/watch?v=sample-e027",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e028",
-    "url": "https://www.youtube.com/watch?v=sample-e028",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e028"
-  },
-  {
-    "id": "src-e029",
-    "url": "https://www.youtube.com/watch?v=sample-e029",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e030",
-    "url": "https://www.youtube.com/watch?v=sample-e030",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e031",
-    "url": "https://www.youtube.com/watch?v=sample-e031",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e032",
-    "url": "https://www.youtube.com/watch?v=sample-e032",
-    "kind": "archive",
-    "retrieved": "2026-09-15",
-    "archiveUrl": "https://web.archive.org/web/2026/https://www.youtube.com/watch?v=sample-e032"
-  },
-  {
-    "id": "src-e033",
-    "url": "https://www.youtube.com/watch?v=sample-e033",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
-  },
-  {
-    "id": "src-e034",
-    "url": "https://www.youtube.com/watch?v=sample-e034",
-    "kind": "archive",
-    "retrieved": "2026-09-15"
+    "id": "s-showdown-teams",
+    "url": "https://www.appbank.net/2025/03/05/vtuber/2760049.php",
+    "kind": "news",
+    "retrieved": "2026-10-03",
+    "title": "AppBank: VSPO! SHOWDOWN チーム発表"
   }
 ]

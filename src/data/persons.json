@@ -1,328 +1,951 @@
 [
   {
-    "id": "hoshino-mina",
-    "name": "星野ミナ",
-    "kana": "ほしのみな",
+    "id": "tsukino-mito",
+    "name": "月ノ美兎",
+    "kana": "つきのみと",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2022-04-01",
+    "debut": "2018-02-08",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-hoshino-mina"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_hoshino_mina"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E6%9C%88%E3%83%8E%E7%BE%8E%E5%85%8E"
       }
     ],
-    "bio": "ステラノート1期生。歌枠と雑談が中心。ユニット「Lumière」のリーダー。"
+    "bio": "にじさんじ1期生。JK組のひとり。"
   },
   {
-    "id": "tsukishiro-rei",
-    "name": "月城レイ",
-    "kana": "つきしろれい",
-    "aliases": [
-      "月白レイ"
-    ],
-    "kind": "vtuber",
-    "status": "active",
-    "debut": "2022-04-01",
-    "links": [
-      {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-tsukishiro-rei"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/sample_tsukishiro_rei"
-      }
-    ],
-    "bio": "ステラノート1期生。FPSとホラーゲーム実況が得意。"
-  },
-  {
-    "id": "asagiri-kohaku",
-    "name": "朝霧コハク",
-    "kana": "あさぎりこはく",
+    "id": "higuchi-kaede",
+    "name": "樋口楓",
+    "kana": "ひぐちかえで",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2022-04-02",
+    "debut": "2018-02-08",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-asagiri-kohaku"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_asagiri_kohaku"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E6%A8%8B%E5%8F%A3%E6%A5%93"
       }
     ],
-    "bio": "ステラノート1期生。料理配信と長時間耐久配信で知られる。"
+    "bio": "にじさんじ1期生。JK組のひとり。V最協S5で優勝したチームのメンバー。"
   },
   {
-    "id": "yoimiya-ruka",
-    "name": "宵宮ルカ",
-    "kana": "よいみやるか",
+    "id": "shizuka-rin",
+    "name": "静凛",
+    "kana": "しずかりん",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2018-02-08",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E9%9D%99%E5%87%9B"
+      }
+    ],
+    "bio": "にじさんじ1期生。JK組のひとり。"
+  },
+  {
+    "id": "yuuki-chihiro",
+    "name": "勇気ちひろ",
+    "kana": "ゆうきちひろ",
     "aliases": [],
     "kind": "vtuber",
     "status": "retired",
-    "debut": "2022-04-02",
+    "debut": "2018-02-08",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-yoimiya-ruka"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_yoimiya_ruka"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%8B%87%E6%B0%97%E3%81%A1%E3%81%B2%E3%82%8D"
       }
     ],
-    "bio": "ステラノート1期生。2025年12月に卒業。"
+    "bio": "にじさんじ1期生。2024年1月31日に卒業(1期生で最初の卒業)。"
   },
   {
-    "id": "amane-yuzu",
-    "name": "天音ユズ",
-    "kana": "あまねゆず",
+    "id": "suzuya-aki",
+    "name": "鈴谷アキ",
+    "kana": "すずやあき",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "retired",
+    "debut": "2018-02-08",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E9%88%B4%E8%B0%B7%E3%82%A2%E3%82%AD"
+      }
+    ],
+    "bio": "にじさんじ1期生。にじさんじ漢組のひとり。2024年8月31日に卒業。"
+  },
+  {
+    "id": "moira",
+    "name": "モイラ",
+    "kana": "もいら",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2023-03-15",
+    "debut": "2018-02-08",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-amane-yuzu"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_amane_yuzu"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E3%83%A2%E3%82%A4%E3%83%A9"
       }
     ],
-    "bio": "ステラノート2期生。オリジナル曲を多数発表している歌い手系VTuber。"
+    "bio": "にじさんじ1期生。"
   },
   {
-    "id": "kuroba-kai",
-    "name": "黒羽カイ",
-    "kana": "くろばかい",
+    "id": "eru",
+    "name": "える",
+    "kana": "える",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2023-03-15",
+    "debut": "2018-02-08",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-kuroba-kai"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_kuroba_kai"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E3%81%88%E3%82%8B"
       }
     ],
-    "bio": "ステラノート2期生。マインクラフト建築とレトロゲーム。"
+    "bio": "にじさんじ1期生。"
   },
   {
-    "id": "shirayuki-noa",
-    "name": "白雪ノア",
-    "kana": "しらゆきのあ",
-    "aliases": [],
-    "kind": "vtuber",
-    "status": "hiatus",
-    "debut": "2023-03-16",
-    "links": [
-      {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-shirayuki-noa"
-      },
-      {
-        "label": "X",
-        "url": "https://x.com/sample_shirayuki_noa"
-      }
-    ],
-    "bio": "ステラノート2期生。現在は活動休止中(公式発表あり)。"
-  },
-  {
-    "id": "sakuraba-hina",
-    "name": "桜庭ヒナ",
-    "kana": "さくらばひな",
+    "id": "shibuya-hajime",
+    "name": "渋谷ハジメ",
+    "kana": "しぶやはじめ",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2024-06-01",
+    "debut": "2018-02-08",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-sakuraba-hina"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_sakuraba_hina"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E6%B8%8B%E8%B0%B7%E3%83%8F%E3%82%B8%E3%83%A1"
       }
     ],
-    "bio": "ステラノート3期生。ダンスと3D配信が得意。"
+    "bio": "にじさんじ1期生。にじさんじ漢組のひとり。"
   },
   {
-    "id": "raido-jin",
-    "name": "雷堂ジン",
-    "kana": "らいどうじん",
+    "id": "kenmochi-toya",
+    "name": "剣持刀也",
+    "kana": "けんもちとうや",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2024-06-01",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-raido-jin"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_raido_jin"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%89%A3%E6%8C%81%E5%88%80%E4%B9%9F"
       }
     ],
-    "bio": "ステラノート3期生。格闘ゲームの大会常連。"
+    "bio": "にじさんじ所属。ROF-MAOのメンバー。"
   },
   {
-    "id": "kitsunebi-akari",
-    "name": "狐火あかり",
-    "kana": "きつねびあかり",
+    "id": "fuwa-minato",
+    "name": "不破湊",
+    "kana": "ふわみなと",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2021-08-10",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-kitsunebi-akari"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_kitsunebi_akari"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E4%B8%8D%E7%A0%B4%E6%B9%8A"
       }
     ],
-    "bio": "個人勢VTuber。ホラーゲームと朗読。"
+    "bio": "にじさんじ所属。ROF-MAOのメンバー。"
   },
   {
-    "id": "mecha-bolt",
-    "name": "メカ丸ボルト",
-    "kana": "めかまるぼると",
+    "id": "kagami-hayato",
+    "name": "加賀美ハヤト",
+    "kana": "かがみはやと",
     "aliases": [],
     "kind": "vtuber",
     "status": "active",
-    "debut": "2023-01-20",
     "links": [
       {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/@sample-mecha-bolt"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_mecha_bolt"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%8A%A0%E8%B3%80%E7%BE%8E%E3%83%8F%E3%83%A4%E3%83%88"
       }
     ],
-    "bio": "個人勢のロボット系VTuber。技術解説と自作ゲーム。"
+    "bio": "にじさんじ所属。ROF-MAOのメンバー。"
   },
   {
-    "id": "takenoko",
-    "name": "たけのこ",
-    "kana": "たけのこ",
-    "aliases": [
-      "takenoko_tv"
-    ],
-    "kind": "streamer",
+    "id": "kaida-haru",
+    "name": "甲斐田晴",
+    "kana": "かいだはる",
+    "aliases": [],
+    "kind": "vtuber",
     "status": "active",
     "links": [
       {
-        "label": "Twitch",
-        "url": "https://www.twitch.tv/sample_takenoko"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_takenoko"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%94%B2%E6%96%90%E7%94%B0%E6%99%B4"
       }
     ],
-    "bio": "FPSを中心に活動するストリーマー。大会主催も行う。"
+    "bio": "にじさんじ所属。ROF-MAOのメンバー。"
   },
   {
-    "id": "gamer-k",
-    "name": "ゲーマーK",
-    "kana": "げーまーけー",
+    "id": "fura-kanato",
+    "name": "風楽奏斗",
+    "kana": "ふらかなと",
     "aliases": [],
-    "kind": "streamer",
+    "kind": "vtuber",
     "status": "active",
+    "debut": "2022-07-13",
     "links": [
       {
-        "label": "Twitch",
-        "url": "https://www.twitch.tv/sample_gamer_k"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_gamer_k"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E9%A2%A8%E6%A5%BD%E5%A5%8F%E6%96%97"
       }
     ],
-    "bio": "格闘ゲーム・レトロゲームのストリーマー。"
+    "bio": "にじさんじ所属。VOLTACTIONのメンバー。"
   },
   {
-    "id": "shion",
-    "name": "しおん",
-    "kana": "しおん",
+    "id": "watarai-hibari",
+    "name": "渡会雲雀",
+    "kana": "わたらいひばり",
     "aliases": [],
-    "kind": "streamer",
+    "kind": "vtuber",
     "status": "active",
+    "debut": "2022-07-13",
     "links": [
       {
-        "label": "Twitch",
-        "url": "https://www.twitch.tv/sample_shion"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
       },
       {
-        "label": "X",
-        "url": "https://x.com/sample_shion"
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E6%B8%A1%E4%BC%9A%E9%9B%B2%E9%9B%80"
       }
     ],
-    "bio": "雑談とマインクラフトのストリーマー。"
+    "bio": "にじさんじ所属。VOLTACTIONのメンバー。"
   },
   {
-    "id": "palette",
-    "name": "ぱれっと",
-    "kana": "ぱれっと",
+    "id": "shikinagi-akira",
+    "name": "四季凪アキラ",
+    "kana": "しきなぎあきら",
     "aliases": [],
-    "kind": "creator",
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2022-07-13",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%9B%9B%E5%AD%A3%E5%87%AA%E3%82%A2%E3%82%AD%E3%83%A9"
+      }
+    ],
+    "bio": "にじさんじ所属。VOLTACTIONのメンバー。"
+  },
+  {
+    "id": "seraph-dazzlegarden",
+    "name": "セラフ・ダズルガーデン",
+    "kana": "せらふだずるがーでん",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2022-07-13",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E3%82%BB%E3%83%A9%E3%83%95%E3%83%BB%E3%83%80%E3%82%BA%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3"
+      }
+    ],
+    "bio": "にじさんじ所属。VOLTACTIONのメンバー。"
+  },
+  {
+    "id": "ange-katrina",
+    "name": "アンジュ・カトリーナ",
+    "kana": "あんじゅかとりーな",
+    "aliases": [],
+    "kind": "vtuber",
     "status": "active",
     "links": [
       {
-        "label": "X",
-        "url": "https://x.com/sample_palette"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E3%82%A2%E3%83%B3%E3%82%B8%E3%83%A5%E3%83%BB%E3%82%AB%E3%83%88%E3%83%AA%E3%83%BC%E3%83%8A"
       }
     ],
-    "bio": "イラストレーター。複数のVTuberのキャラクターデザインを担当。"
+    "bio": "にじさんじ所属。さんばかのひとり。"
   },
   {
-    "id": "mochiko",
-    "name": "もちこ",
-    "kana": "もちこ",
+    "id": "lize-helesta",
+    "name": "リゼ・ヘルエスタ",
+    "kana": "りぜへるえすた",
     "aliases": [],
-    "kind": "creator",
+    "kind": "vtuber",
     "status": "active",
     "links": [
       {
-        "label": "X",
-        "url": "https://x.com/sample_mochiko"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E3%83%AA%E3%82%BC%E3%83%BB%E3%83%98%E3%83%AB%E3%82%A8%E3%82%B9%E3%82%BF"
       }
     ],
-    "bio": "イラストレーター・Live2Dモデラー。"
+    "bio": "にじさんじ所属。さんばかのひとり。"
   },
   {
-    "id": "tone-p",
-    "name": "Tone",
-    "kana": "とーん",
+    "id": "inui-toko",
+    "name": "戌亥とこ",
+    "kana": "いぬいとこ",
     "aliases": [],
-    "kind": "creator",
+    "kind": "vtuber",
     "status": "active",
     "links": [
       {
-        "label": "X",
-        "url": "https://x.com/sample_tone_p"
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E6%88%8C%E4%BA%A5%E3%81%A8%E3%81%93"
       }
     ],
-    "bio": "作曲家。VTuberへの楽曲提供を行う。"
+    "bio": "にじさんじ所属。さんばかのひとり。"
+  },
+  {
+    "id": "kanae",
+    "name": "叶",
+    "kana": "かなえ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%8F%B6"
+      }
+    ],
+    "bio": "にじさんじ所属。V最協S5ではチーム「TSN」のリーダー。"
+  },
+  {
+    "id": "lauren-iroas",
+    "name": "ローレン・イロアス",
+    "kana": "ろーれんいろあす",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%BB%E3%82%A4%E3%83%AD%E3%82%A2%E3%82%B9"
+      }
+    ],
+    "bio": "にじさんじ所属。FPSを中心に活動。"
+  },
+  {
+    "id": "yuhi-riri",
+    "name": "夕陽リリ",
+    "kana": "ゆうひりり",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%A4%95%E9%99%BD%E3%83%AA%E3%83%AA"
+      }
+    ],
+    "bio": "にじさんじ所属。"
+  },
+  {
+    "id": "uzuki-kou",
+    "name": "卯月コウ",
+    "kana": "うづきこう",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%8D%AF%E6%9C%88%E3%82%B3%E3%82%A6"
+      }
+    ],
+    "bio": "にじさんじ所属。"
+  },
+  {
+    "id": "makaino-ririmu",
+    "name": "魔界ノりりむ",
+    "kana": "まかいのりりむ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://www.nijisanji.jp/talents"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E9%AD%94%E7%95%8C%E3%83%8E%E3%82%8A%E3%82%8A%E3%82%80"
+      }
+    ],
+    "bio": "にじさんじ所属。"
+  },
+  {
+    "id": "kaga-sumire",
+    "name": "花芽すみれ",
+    "kana": "かがすみれ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2018-10-20",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E8%8A%B1%E8%8A%BD%E3%81%99%E3%81%BF%E3%82%8C"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。Lupinus Virtual Games のメンバー。"
+  },
+  {
+    "id": "kaga-nazuna",
+    "name": "花芽なずな",
+    "kana": "かがなずな",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2018-10-20",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E8%8A%B1%E8%8A%BD%E3%81%AA%E3%81%9A%E3%81%AA"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。Lupinus Virtual Games のメンバー。"
+  },
+  {
+    "id": "kosuzume-toto",
+    "name": "小雀とと",
+    "kana": "こすずめとと",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2018-10-19",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%B0%8F%E9%9B%80%E3%81%A8%E3%81%A8"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。Lupinus Virtual Games のメンバー。"
+  },
+  {
+    "id": "ichinose-uruha",
+    "name": "一ノ瀬うるは",
+    "kana": "いちのせうるは",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2019-04-19",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E4%B8%80%E3%83%8E%E7%80%AC%E3%81%86%E3%82%8B%E3%81%AF"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。Lupinus Virtual Games のメンバー。"
+  },
+  {
+    "id": "kurumi-noa",
+    "name": "胡桃のあ",
+    "kana": "くるみのあ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E8%83%A1%E6%A1%83%E3%81%AE%E3%81%82"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。V最協S5で優勝したチームのメンバー。"
+  },
+  {
+    "id": "tosaki-mimi",
+    "name": "兎咲ミミ",
+    "kana": "とさきみみ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%85%8E%E5%92%B2%E3%83%9F%E3%83%9F"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。V最協S5で優勝したチームのメンバー。"
+  },
+  {
+    "id": "asumi-sena",
+    "name": "空澄セナ",
+    "kana": "あすみせな",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%A9%BA%E6%BE%84%E3%82%BB%E3%83%8A"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "tachibana-hinano",
+    "name": "橘ひなの",
+    "kana": "たちばなひなの",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E6%A9%98%E3%81%B2%E3%81%AA%E3%81%AE"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。V最協S5ではチーム「花鳥牛月」のリーダー。"
+  },
+  {
+    "id": "hanabusa-lisa",
+    "name": "英リサ",
+    "kana": "はなぶさりさ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E8%8B%B1%E3%83%AA%E3%82%B5"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。V最協S5ではチーム「ピンクブレイン」のリーダー。"
+  },
+  {
+    "id": "kisaragi-ren",
+    "name": "如月れん",
+    "kana": "きさらぎれん",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%A6%82%E6%9C%88%E3%82%8C%E3%82%93"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "kaminari-qpi",
+    "name": "神成きゅぴ",
+    "kana": "かみなりきゅぴ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%A5%9E%E6%88%90%E3%81%8D%E3%82%85%E3%81%B4"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "yakumo-beni",
+    "name": "八雲べに",
+    "kana": "やくもべに",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%85%AB%E9%9B%B2%E3%81%B9%E3%81%AB"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "aizawa-ema",
+    "name": "藍沢エマ",
+    "kana": "あいざわえま",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E8%97%8D%E6%B2%A2%E3%82%A8%E3%83%9E"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "shinomiya-runa",
+    "name": "紫宮るな",
+    "kana": "しのみやるな",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%B4%AB%E5%AE%AE%E3%82%8B%E3%81%AA"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "nekota-tsuna",
+    "name": "猫汰つな",
+    "kana": "ねこたつな",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%8C%AB%E6%B1%B0%E3%81%A4%E3%81%AA"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "shiranami-ramune",
+    "name": "白波らむね",
+    "kana": "しらなみらむね",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%99%BD%E6%B3%A2%E3%82%89%E3%82%80%E3%81%AD"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "komori-met",
+    "name": "小森めと",
+    "kana": "こもりめと",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%B0%8F%E6%A3%AE%E3%82%81%E3%81%A8"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "yumeno-akari",
+    "name": "夢野あかり",
+    "kana": "ゆめのあかり",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%A4%A2%E9%87%8E%E3%81%82%E3%81%8B%E3%82%8A"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "yano-kuromu",
+    "name": "夜乃くろむ",
+    "kana": "やのくろむ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%A4%9C%E4%B9%83%E3%81%8F%E3%82%8D%E3%82%80"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "tsumugi-kokage",
+    "name": "紡木こかげ",
+    "kana": "つむぎこかげ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%B4%A1%E6%9C%A8%E3%81%93%E3%81%8B%E3%81%92"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。"
+  },
+  {
+    "id": "sendo-yuuhi",
+    "name": "千燈ゆうひ",
+    "kana": "せんどうゆうひ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E5%8D%83%E7%87%88%E3%82%86%E3%81%86%E3%81%B2"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。2024年4月30日に加入発表。"
+  },
+  {
+    "id": "choya-hanabi",
+    "name": "蝶屋はなび",
+    "kana": "ちょうやはなび",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E8%9D%B6%E5%B1%8B%E3%81%AF%E3%81%AA%E3%81%B3"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。2024年10月31日に加入発表。"
+  },
+  {
+    "id": "amayui-moka",
+    "name": "甘結もか",
+    "kana": "あまゆいもか",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E7%94%98%E7%B5%90%E3%82%82%E3%81%8B"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。2024年10月31日に加入発表。"
+  },
+  {
+    "id": "ginjo-saine",
+    "name": "銀城サイネ",
+    "kana": "ぎんじょうさいね",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2026-01-14",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E9%8A%80%E5%9F%8E%E3%82%B5%E3%82%A4%E3%83%8D"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。2026年1月11日に加入発表、1月14日に初配信。"
+  },
+  {
+    "id": "tatsumaki-chise",
+    "name": "龍巻ちせ",
+    "kana": "たつまきちせ",
+    "aliases": [],
+    "kind": "vtuber",
+    "status": "active",
+    "debut": "2026-01-14",
+    "links": [
+      {
+        "label": "公式サイト",
+        "url": "https://vspo.jp/"
+      },
+      {
+        "label": "YouTubeで探す",
+        "url": "https://www.youtube.com/results?search_query=%E9%BE%8D%E5%B7%BB%E3%81%A1%E3%81%9B"
+      }
+    ],
+    "bio": "ぶいすぽっ!所属。2026年1月11日に加入発表、1月14日に初配信。"
   }
 ]

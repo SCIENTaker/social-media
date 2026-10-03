@@ -36,7 +36,7 @@ function evidenceCount(e: NeighborEdge, cat: RelationCategory): number {
   return e.relations.filter((r) => r.type === cat).reduce((n, r) => n + r.sourceIds.length, 0);
 }
 
-function buildElements(center: Person, edges: NeighborEdge[]): ElementDefinition[] {
+function buildElements(center: Person, edges: NeighborEdge[], vertical: boolean): ElementDefinition[] {
   const els: ElementDefinition[] = [];
   const centerAgency = db.primaryAgency(center.id);
   const frames = new Map<string, string>();
@@ -55,6 +55,11 @@ function buildElements(center: Person, edges: NeighborEdge[]): ElementDefinition
   for (const [id, name] of frames) els.push({ data: { id: `org:${id}`, label: name }, classes: 'org' });
 
   const positions = layoutPositions(center.id, edges, parents);
+  // 人数が少ないときは間隔を詰めて、全体を大きく表示する
+  const scale = Math.min(1, 0.55 + edges.length * 0.025);
+  for (const [id, p] of positions) positions.set(id, { x: p.x * scale, y: p.y * scale });
+  // 縦長の画面(スマートフォン)では、左右に広がる配置を上下に入れ替えて大きく表示する
+  if (vertical) for (const [id, p] of positions) positions.set(id, { x: p.y * 0.6, y: p.x * 1.35 });
   for (const p of people) {
     els.push({
       data: { id: p.id, label: p.name, parent: parents.get(p.id), fill: KIND_FILL[p.kind] },
@@ -98,40 +103,59 @@ function buildElements(center: Person, edges: NeighborEdge[]): ElementDefinition
 }
 
 /**
- * 中心人物を原点に置き、同じ枠(事務所)の人は左側、それ以外は枠ごとにまとめて右側へ扇状に並べる。
- * 枠の外の人が枠の中に入り込んで「所属している」ように見えるのを防ぐため、自動レイアウトは使わない。
+ * 中心人物を原点に置き、扇状に並べる。
+ * - 中心人物と同じ枠(事務所)の人: 左側
+ * - 別の枠の人: 右側。中心から離して、自分の枠と重ならないようにする
+ * - 枠を持たない人(卒業者・個人勢など): 右下
+ * 自動レイアウトでは枠の外の人が枠の中に入り込み「所属している」ように見えるため使わない。
  */
 function layoutPositions(centerId: string, edges: NeighborEdge[], parents: Map<string, string | undefined>) {
   const pos = new Map<string, { x: number; y: number }>([[centerId, { x: 0, y: 0 }]]);
+  const own = parents.get(centerId);
   const groups = new Map<string, NeighborEdge[]>();
   for (const e of edges) {
     const key = parents.get(e.other.id) ?? '';
     groups.set(key, [...(groups.get(key) ?? []), e]);
   }
-  const own = parents.get(centerId);
-  const place = (list: NeighborEdge[], from: number, to: number) => {
-    const many = list.length > 7;
+
+  const place = (list: NeighborEdge[], from: number, to: number, base: number) => {
+    // 人数が多いときは複数の輪に交互に置いて、ラベルの重なりを減らす
+    const rings = list.length > 10 ? 3 : list.length > 6 ? 2 : 1;
     list.forEach((e, i) => {
       const t = list.length === 1 ? 0.5 : i / (list.length - 1);
       const angle = ((from + (to - from) * t) * Math.PI) / 180;
-      const r = many ? (i % 2 ? 270 : 180) : 210;
+      const r = base + ((i % rings) - (rings - 1) / 2) * 70;
       pos.set(e.other.id, { x: Math.cos(angle) * r, y: Math.sin(angle) * r });
     });
   };
-  const ownList = own ? (groups.get(own) ?? []) : [];
-  if (ownList.length) place(ownList, 110, 250);
-  const rest = [...groups].filter(([k]) => !own || k !== own);
-  // 右側(-70°〜70°)を枠ごとに分け、間に少し隙間をあける
-  const total = rest.reduce((n, [, l]) => n + l.length, 0);
-  const span = ownList.length ? 140 : 300;
-  const start = ownList.length ? -70 : -150;
-  const gap = rest.length > 1 ? 12 : 0;
-  const usable = span - gap * (rest.length - 1);
-  let cursor = start;
-  for (const [, list] of rest) {
-    const width = (usable * list.length) / Math.max(total, 1);
-    place(list, cursor, cursor + width);
-    cursor += width + gap;
+  /** 角度の範囲を、人数に比例してグループごとに分ける */
+  const spread = (list: NeighborEdge[][], from: number, to: number, base: (i: number) => number) => {
+    const total = list.reduce((n, l) => n + l.length, 0);
+    const gap = list.length > 1 ? 14 : 0;
+    const usable = to - from - gap * (list.length - 1);
+    let cursor = from;
+    list.forEach((l, i) => {
+      const width = (usable * l.length) / Math.max(total, 1);
+      place(l, cursor, cursor + width, base(i));
+      cursor += width + gap;
+    });
+  };
+
+  const loose = groups.get('') ?? [];
+  const others = [...groups].filter(([k]) => k !== '' && k !== own).map(([, l]) => l);
+  if (!own) {
+    // 中心人物に枠がない場合は全周を使う(枠を持たない人は内側の輪)
+    const list = [...others, ...(loose.length ? [loose] : [])];
+    spread(list, -150, 150, (i) => (i < others.length ? 300 : 210));
+    return pos;
+  }
+  const ownList = groups.get(own) ?? [];
+  if (ownList.length) place(ownList, 115, 245, 210);
+  if (others.length) spread(others, -60, 50, () => 330);
+  // 枠を持たない人は、どの枠にも入らないよう真下の外側に置く
+  if (loose.length) {
+    if (ownList.length || others.length) place(loose, 75, 105, 390);
+    else place(loose, -150, 150, 210);
   }
   return pos;
 }
@@ -141,7 +165,7 @@ function lastOf(e: NeighborEdge, cat: RelationCategory): string | undefined {
   return evs.reduce<string | undefined>((m, ev) => (!m || ev.date > m ? ev.date : m), undefined);
 }
 
-export function RelationGraph({ center, edges, onSelect }: Props) {
+export default function RelationGraph({ center, edges, onSelect }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [tip, setTip] = useState<Tip | null>(null);
   const onSelectRef = useRef(onSelect);
@@ -151,9 +175,12 @@ export function RelationGraph({ center, edges, onSelect }: Props) {
     if (!ref.current) return;
     const text = getComputedStyle(ref.current).getPropertyValue('--text').trim() || '#222';
     const surface = getComputedStyle(ref.current).getPropertyValue('--surface-2').trim() || '#f3f4f6';
+    const vertical = ref.current.clientWidth < ref.current.clientHeight;
+    // 縦長の画面では全体が縮小されるため、ノードと文字を大きめにしておく
+    const k = vertical ? 1.35 : 1;
     const cy = cytoscape({
       container: ref.current,
-      elements: buildElements(center, edges),
+      elements: buildElements(center, edges, vertical),
       wheelSensitivity: 0.2,
       minZoom: 0.3,
       maxZoom: 2.5,
@@ -164,16 +191,16 @@ export function RelationGraph({ center, edges, onSelect }: Props) {
             'background-color': 'data(fill)',
             label: 'data(label)',
             color: text,
-            'font-size': 12,
+            'font-size': 12 * k,
             'text-valign': 'bottom',
             'text-margin-y': 4,
-            width: 34,
-            height: 34,
+            width: 34 * k,
+            height: 34 * k,
             'border-width': 2,
             'border-color': '#fff',
           },
         },
-        { selector: 'node.center', style: { width: 56, height: 56, 'font-size': 15, 'font-weight': 'bold', 'border-color': '#f2c94c', 'border-width': 4 } },
+        { selector: 'node.center', style: { width: 56 * k, height: 56 * k, 'font-size': 15 * k, 'font-weight': 'bold', 'border-color': '#f2c94c', 'border-width': 4 } },
         { selector: 'node.retired', style: { opacity: 0.6 } },
         {
           selector: 'node.org',
@@ -187,9 +214,10 @@ export function RelationGraph({ center, edges, onSelect }: Props) {
             label: 'data(label)',
             'text-valign': 'top',
             'text-halign': 'center',
-            'font-size': 11,
+            'font-size': 12 * k,
+            'text-margin-y': -2,
             color: '#8a8f98',
-            padding: '14px',
+            padding: '16px',
           },
         },
         {
@@ -226,6 +254,14 @@ export function RelationGraph({ center, edges, onSelect }: Props) {
       setTip({ x: p.x, y: p.y, lines: evt.target.data('tip') });
     });
     cy.on('mouseout', 'edge', () => setTip(null));
+    // タッチ端末ではホバーできないため、線をタップしたときにも表示する
+    cy.on('tap', 'edge', (evt) => {
+      const p = evt.renderedPosition;
+      setTip({ x: p.x, y: p.y, lines: evt.target.data('tip') });
+    });
+    cy.on('tap', (evt) => {
+      if (evt.target === cy) setTip(null);
+    });
     cy.on('mouseover', 'node', (evt) => {
       if (!evt.target.isParent()) ref.current!.style.cursor = 'pointer';
     });
@@ -247,34 +283,6 @@ export function RelationGraph({ center, edges, onSelect }: Props) {
           ))}
         </div>
       )}
-    </div>
-  );
-}
-
-export function GraphLegend() {
-  return (
-    <div className="legend">
-      {(['collab', 'project', 'creation', 'declared'] as RelationCategory[]).map((c) => (
-        <span key={c} className="legend-item">
-          <svg width="28" height="10" aria-hidden>
-            <line
-              x1="0"
-              y1="5"
-              x2="28"
-              y2="5"
-              stroke={CATEGORY_COLORS[c]}
-              strokeWidth={c === 'collab' || c === 'project' ? 4 : 2}
-              strokeDasharray={c === 'creation' ? '5 3' : undefined}
-            />
-          </svg>
-          {CATEGORY_LABELS[c]}
-        </span>
-      ))}
-      <span className="legend-item">
-        <span className="legend-frame" />
-        {CATEGORY_LABELS.affiliation}(枠)
-      </span>
-      <span className="legend-item muted">線の太さ = 期間内の回数</span>
     </div>
   );
 }

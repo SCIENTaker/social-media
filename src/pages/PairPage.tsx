@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { db } from '../lib/store';
+import { sharedTeam } from '../lib/db';
 import { formatDate, pairPath } from '../lib/format';
 import { Avatar, CategoryTag, EventRow, PersonBadges, PersonChip, SourceLinks } from '../components/common';
 import { SearchBox } from '../components/SearchBox';
@@ -131,9 +132,10 @@ function PairDetail({ a, b }: { a: Person; b: Person }) {
             </select>
           </div>
           <ul className="event-list">
-            {filtered.map((e) => (
-              <EventRow key={e.id} event={e} />
-            ))}
+            {filtered.map((e) => {
+              const team = sharedTeam(e, a.id, b.id);
+              return <EventRow key={e.id} event={e} note={team && `同じチーム「${team}」`} />;
+            })}
           </ul>
         </section>
       )}

@@ -1,4 +1,4 @@
-import { useId, useState } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { db } from '../lib/store';
 import type { Person } from '../lib/types';
 import { Avatar } from './common';
@@ -19,6 +19,10 @@ export function SearchBox({ placeholder = '名前・読み・旧名で検索', o
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
   const listId = useId();
+  // URL の変更などで選択中の人物が外から変わったら表示を合わせる
+  useEffect(() => {
+    if (value) setQ(value.name);
+  }, [value]);
   const results = open ? db.search(q, 8) : [];
 
   const choose = (p: Person) => {
